@@ -17,4 +17,3 @@ bgImage.src = `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
 // appendChild()는 body에 html 요소를 추가한다.
-
