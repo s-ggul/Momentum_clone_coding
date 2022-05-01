@@ -49,5 +49,5 @@ const author = document.querySelector('#quote span:last-child');
 
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)] // 한자리 정수를 랜덤으로 반환 0 ~ 9
 
-quote.innerText = todayQuote.quote;
+quote.innerText = todayQuote.quote + ` - `;
 author.innerText = todayQuote.author;
