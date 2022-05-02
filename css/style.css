@@ -1,3 +1,87 @@
-.hidden{
+@font-face {
+    font-family: "Jalnan";
+    src : url("font/Jalnan.ttf") format("truetype");
+}
+body{
+    color:rgb(243, 240, 240);
+    font-family: "Jalnan";
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 3px solid rgb(211, 211, 211);
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+    font-family: "Jalnan";
+    font-size:20px;
+    background-color: rgba(85, 79, 79, 0);
+    color:rgb(243, 240, 240);
+}
+
+input::placeholder{
+    color:rgb(243, 240, 240);
+    font-size: 20px;
+}
+
+.hidden {
     display: none;
 }
+
+#clock {
+    font-size: 100px;
+    position:fixed;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+#weather{
+    font-size: 35px;
+    position:fixed;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+#greeting {
+    font-size: 50px;
+    position: fixed;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+#quote{
+    font-size: 20px;
+    position:fixed;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#todo-form{
+    font-size: 20px;
+    position:fixed;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+#todo-list li{
+    margin-top: 10px;
+}
+
+#todo-list{
+    list-style-type:none;
+    padding-left:0px;
+    font-size: 20px;
+    position:fixed;
+    bottom: 30%;
+    width: 35%;
+    text-align: left;
+    left: 100px;
+}
+ 

@@ -7,6 +7,7 @@ let todos = [];
 const TODOS_KEY = 'todos';
 
 function saveTodos(){
+    
     localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
     //localStorage에는 array를 저장할 수 없고 오직 text만 저장할 수 있기때문에 todos를 string 형태로 변환
     //이때 JSON.stringify는 js object나 array또는 어떤 Javascript 코드건간에 그걸 string으로 만들어준다.
@@ -52,9 +53,15 @@ function handleTodoSubmit(event)
         text : newTodo,
         id : Date.now(),
     };
-    todos.push(newTodoObj);
-    paintTodo(newTodoObj);
-    saveTodos();
+    const parsedTodos = JSON.parse(savedTodos);
+    if (parsedTodos.length === 5){
+        alert('There is so many task. Please delete some tasks.');
+    }
+    else{
+        todos.push(newTodoObj);
+        paintTodo(newTodoObj);
+        saveTodos();
+    }
 }
 
 todoForm.addEventListener('submit', handleTodoSubmit);
