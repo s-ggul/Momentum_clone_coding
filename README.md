@@ -26,5 +26,5 @@ This is Momentum clone coding repository.
 - `localStorage` 에 사용자명 & To do list 저장 
 - `openweatherapp api`를 이용한 날씨 및 지역 정보 (with`geolocation`)
 - `random()`을 이용한 `background Image` 및 `quote` 불러오기
-- `setInterval`을 이용한 시간 출력 구현(1초마다 실행)
+- `setInterval()`을 이용한 시간 출력 구현(1초마다 실행) + `padStart()`를 이용한 시간문자열 파싱
 - To do list `추가` 및 `삭제` 기능 
